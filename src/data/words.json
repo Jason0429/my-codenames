@@ -1,0 +1,131 @@
+{
+	"words": [
+		[
+			{
+				"word": "horseshoe",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "mother",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "drop",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "sahara",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "ski",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "church",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "map",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "file",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "glass",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "eagle",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "racket",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "spoon",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "parade",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "whale",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "march",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "tiger",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "undertaker",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "sound",
+				"team": "black",
+				"isRevealed": false
+			},
+			{
+				"word": "cloak",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "mess",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "robin",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "buck",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "blues",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "mug",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "wheelchair",
+				"team": "white",
+				"isRevealed": false
+			}
+		]
+	]
+}

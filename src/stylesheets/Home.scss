@@ -1,0 +1,56 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main {
+	height: 100vh;
+	width: 100vw;
+	background-color: #282c34;
+	color: white;
+}
+
+.row {
+	width: 100%;
+	display: flex;
+	padding: 20px 15px;
+}
+
+.col {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 20px 15px;
+}
+
+.center {
+	align-items: center;
+	justify-content: center;
+}
+
+.title {
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.author {
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.accordion {
+	width: 500px;
+}
+
+.btn {
+	text-decoration: none !important;
+}
+
+// AccordionDetails Global CSS Value
+.MuiAccordionDetails-root {
+	display: flex;
+	flex-direction: column;
+}
