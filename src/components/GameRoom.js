@@ -75,6 +75,12 @@ function GameRoom({
 		guesses: 1
 	});
 
+	useEffect(() => {
+		if (currentUser.role === "" && GAME_STATE === 1) {
+			updateCurrentUserInDB({ ...currentUser, role: "spectator" });
+		}
+	}, updateCurrentUserInDB);
+
 	// Buttons
 	function handleJoinAsRedOperative() {
 		if (currentUser.team === "red" && currentUser.role === "operative")
@@ -174,7 +180,7 @@ function GameRoom({
 		const idx = e.target.parentElement.getAttribute("idx");
 
 		if (
-			currentUser.role === "spymaster" ||
+			currentUser.role !== "operative" ||
 			isSpymasterTyping ||
 			hasWon ||
 			currentUser.team !== currentRound ||
@@ -274,6 +280,7 @@ function GameRoom({
 			updateGameStateInDB(0);
 		}, 5000);
 	}
+
 	return (
 		<div
 			className={classes.window}

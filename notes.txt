@@ -1,0 +1,4 @@
+Fix:
+- When player joins game when game already started
+    - Give spymaster role but without control (spectator role)
+
