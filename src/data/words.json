@@ -126,6 +126,641 @@
 				"team": "white",
 				"isRevealed": false
 			}
+		],
+		[
+			{
+				"word": "eagle",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "genius",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "ketchup",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "car",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "boom",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "france",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "atlantis",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "lead",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "nail",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "knight",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "track",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "line",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "jupiter",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "europe",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "heart",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "embassy",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "battery",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "sock",
+				"team": "black",
+				"isRevealed": false
+			},
+			{
+				"word": "tokyo",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "moon",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "bill",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "tie",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "dance",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "shadow",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "whip",
+				"team": "white",
+				"isRevealed": false
+			}
+		],
+		[
+			{
+				"word": "shot",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "dance",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "pitch",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "crown",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "needle",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "chick",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "australia",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "deck",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "cover",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "light",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "death",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "fire",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "conductor",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "mouth",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "check",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "figure",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "heart",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "soul",
+				"team": "black",
+				"isRevealed": false
+			},
+			{
+				"word": "washer",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "bow",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "fish",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "racket",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "shakespeare",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "row",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "embassy",
+				"team": "white",
+				"isRevealed": false
+			}
+		],
+		[
+			{
+				"word": "jam",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "degree",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "cotton",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "mass",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "spider",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "model",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "eye",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "night",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "forest",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "back",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "field",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "ring",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "tag",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "rock",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "police",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "cap",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "horn",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "plane",
+				"team": "black",
+				"isRevealed": false
+			},
+			{
+				"word": "princess",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "fighter",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "ghost",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "tube",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "marble",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "moscow",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "seal",
+				"team": "white",
+				"isRevealed": false
+			}
+		],
+		[
+			{
+				"word": "mug",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "pin",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "helicopter",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "piano",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "war",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "honey",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "poison",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "horse",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "fence",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "laser",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "bar",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "day",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "space",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "cliff",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "novel",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "wall",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "drill",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "sub",
+				"team": "black",
+				"isRevealed": false
+			},
+			{
+				"word": "whale",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "oil",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "thief",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "club",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "kiwi",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "beijing",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "cell",
+				"team": "white",
+				"isRevealed": false
+			}
+		],
+		[
+			{
+				"word": "post",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "thief",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "jet",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "berry",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "back",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "tick",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "contract",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "drill",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "slug",
+				"team": "red",
+				"isRevealed": false
+			},
+			{
+				"word": "soldier",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "space",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "star",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "plane",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "stick",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "berlin",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "water",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "giant",
+				"team": "blue",
+				"isRevealed": false
+			},
+			{
+				"word": "luck",
+				"team": "black",
+				"isRevealed": false
+			},
+			{
+				"word": "genius",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "scorpion",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "lawyer",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "bell",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "spell",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "horn",
+				"team": "white",
+				"isRevealed": false
+			},
+			{
+				"word": "engine",
+				"team": "white",
+				"isRevealed": false
+			}
 		]
 	]
 }
