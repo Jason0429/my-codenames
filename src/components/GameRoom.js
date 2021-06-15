@@ -62,6 +62,9 @@ function GameRoom({
 	// Class styles
 	const classes = useStyles();
 
+	// Winner (Red/Blue)
+	const [winner, setWinner] = useState("");
+
 	// Current Clue
 	const [currentClue, setCurrentClue] = useState({
 		nickname: currentUser.nickname,
@@ -170,25 +173,11 @@ function GameRoom({
 
 	// Check for winning conditions
 	function checkWin() {
-		let redRevealed = 0;
-		let blueRevealed = 0;
-
-		for (let i = 0; i < words.length; i++) {
-			if (words[i]["team"] === "red" && words[i]["isChosen"]) {
-				redRevealed++;
-			} else if (words[i]["team"] === "blue" && words[i]["isChosen"]) {
-				blueRevealed++;
-			}
-		}
-
-		if (redRevealed === 9) {
+		if (redTeamRemainingCards === 0) {
 			return "red";
-		}
-
-		if (blueRevealed === 8) {
+		} else if (blueTeamRemainingCards === 0) {
 			return "blue";
 		}
-
 		return false;
 	}
 
@@ -209,7 +198,6 @@ function GameRoom({
 
 	// Handles when a word is pressed
 	function handleWordClick(e) {
-		// const idx = e.target.parentElement.getAttribute("idx");
 		const idx = e.target.getAttribute("idx");
 
 		if (
@@ -229,7 +217,11 @@ function GameRoom({
 
 		if (word.team === "black") {
 			// If black card
-			switchTurns();
+			if (currentRound === "red") {
+				setWinner("blue");
+			} else {
+				setWinner("red");
+			}
 			endGame();
 			return;
 		} else if (word.team === "white") {
@@ -244,32 +236,42 @@ function GameRoom({
 			}
 
 			if (currentRound === "blue") {
-				updateBlueTeamRemainingCards(blueTeamRemainingCards - 1);
+				updateBlueTeamRemainingCards((prevState) => {
+					if (prevState - 1 === 0) {
+						setWinner("blue");
+						endGame();
+					}
+					return prevState - 1;
+				});
 			} else {
-				updateRedTeamRemainingCards(redTeamRemainingCards - 1);
+				updateRedTeamRemainingCards((prevState) => {
+					if (prevState - 1 === 0) {
+						setWinner("red");
+						endGame();
+					}
+					return prevState - 1;
+				});
 			}
 		} else {
 			// If chooses opposite team
 			if (currentRound === "red") {
-				updateBlueTeamRemainingCards(blueTeamRemainingCards - 1);
+				updateBlueTeamRemainingCards((prevState) => {
+					if (prevState - 1 === 0) {
+						setWinner("blue");
+						endGame();
+					}
+					return prevState - 1;
+				});
 			} else {
-				updateRedTeamRemainingCards(redTeamRemainingCards - 1);
+				updateRedTeamRemainingCards((prevState) => {
+					if (prevState - 1 === 0) {
+						setWinner("red");
+						endGame();
+					}
+					return prevState - 1;
+				});
 			}
 			switchTurns();
-		}
-
-		// CHANGE ORDER OF THIS METHOD
-		// ENDING GAME WHEN A TEAM HAS 1 CARD REMAINING
-		// Check if remaining cards = 0
-		let won = checkWin();
-		if (won === "red") {
-			updateCurrentRoundInDB("red");
-			endGame();
-			return;
-		} else if (won === "blue") {
-			updateCurrentRoundInDB("blue");
-			endGame();
-			return;
 		}
 
 		// No more guesses, switch turns
@@ -775,7 +777,7 @@ function GameRoom({
 					<div className='winner-background'></div>
 					<div className='winner-text'>
 						<Typography variant='h5'>
-							{currentRound.toUpperCase()} TEAM HAS WON
+							{winner.toUpperCase()} TEAM HAS WON
 						</Typography>
 					</div>
 				</>
