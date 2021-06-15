@@ -24,16 +24,24 @@
 }
 
 .chat-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	box-shadow: 0 0 15px 3px #00000050;
 	background: #fff;
 	width: 33%;
 	max-width: 400px;
-	border-radius: 30px;
+	height: 40vh;
+
+	.chat-title {
+		width: 100%;
+		padding: 5px;
+		text-align: center;
+	}
 
 	.chat-box-dialog {
 		width: 100%;
-		height: 400px;
-		max-height: 400px;
+		overflow-y: scroll;
 	}
 }
 
@@ -43,4 +51,43 @@
 	font-weight: bold;
 	border: 3px solid white;
 	border-radius: 30px;
+}
+
+.word-grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(5, minmax(150px, 1fr));
+	aspect-ratio: 100vw / 40vh;
+
+	.word-box {
+		padding: 15px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 2px solid #d1bc9d;
+		cursor: pointer;
+		color: #fff;
+	}
+}
+
+.winner-background {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	backdrop-filter: blur(5px);
+}
+
+.winner-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 20px;
+	border-radius: 30px;
+	border: 2px solid #212121;
+	font-weight: bold;
+	text-transform: uppercase;
 }

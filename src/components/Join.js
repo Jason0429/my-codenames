@@ -9,13 +9,9 @@ function Join({ currentUser, updateCurrentUserInDB }) {
 	const [isValid, setIsValid] = useState(false);
 	const [nickname, setNickname] = useState("");
 
-	// async function getGameState() {
-	// 	return await parseInt(db.ref().child('GAME_STATE').get());
-	// }
-
 	function handleNickname(e) {
-		let value = e.target.value.trim();
-		setIsValid(value.length > 0);
+		let value = e.target.value;
+		setIsValid(value.trim().length > 0);
 		setNickname(value);
 	}
 

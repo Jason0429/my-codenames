@@ -4,762 +4,912 @@
 			{
 				"word": "horseshoe",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "mother",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "drop",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "sahara",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "ski",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "church",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "map",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "file",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "glass",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "eagle",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "racket",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "spoon",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "parade",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "whale",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "march",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "tiger",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "undertaker",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "sound",
 				"team": "black",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "cloak",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "mess",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "robin",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "buck",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "blues",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "mug",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "wheelchair",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			}
 		],
 		[
 			{
 				"word": "eagle",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "genius",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "ketchup",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "car",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "boom",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "france",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "atlantis",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "lead",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "nail",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "knight",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "track",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "line",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "jupiter",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "europe",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "heart",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "embassy",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "battery",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "sock",
 				"team": "black",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "tokyo",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "moon",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "bill",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "tie",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "dance",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "shadow",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "whip",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			}
 		],
 		[
 			{
 				"word": "shot",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "dance",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "pitch",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "crown",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "needle",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "chick",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "australia",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "deck",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "cover",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "light",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "death",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "fire",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "conductor",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "mouth",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "check",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "figure",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "heart",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "soul",
 				"team": "black",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "washer",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "bow",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "fish",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "racket",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "shakespeare",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "row",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "embassy",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			}
 		],
 		[
 			{
 				"word": "jam",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "degree",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "cotton",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "mass",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "spider",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "model",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "eye",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "night",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "forest",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "back",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "field",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "ring",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "tag",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "rock",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "police",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "cap",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "horn",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "plane",
 				"team": "black",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "princess",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "fighter",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "ghost",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "tube",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "marble",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "moscow",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "seal",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			}
 		],
 		[
 			{
 				"word": "mug",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "pin",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "helicopter",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "piano",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "war",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "honey",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "poison",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "horse",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "fence",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "laser",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "bar",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "day",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "space",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "cliff",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "novel",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "wall",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "drill",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "sub",
 				"team": "black",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "whale",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "oil",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "thief",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "club",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "kiwi",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "beijing",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "cell",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			}
 		],
 		[
 			{
 				"word": "post",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "thief",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "jet",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "berry",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "back",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "tick",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "contract",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "drill",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "slug",
 				"team": "red",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "soldier",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "space",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "star",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "plane",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "stick",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "berlin",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "water",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "giant",
 				"team": "blue",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "luck",
 				"team": "black",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "genius",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "scorpion",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "lawyer",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "bell",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "spell",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "horn",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			},
 			{
 				"word": "engine",
 				"team": "white",
-				"isRevealed": false
+				"isRevealed": false,
+				"isChosen": false
 			}
 		]
 	]

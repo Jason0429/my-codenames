@@ -2,7 +2,8 @@ Fix:
 - When player joins game when game already started
     - Give spymaster role but without control (spectator role)
 
-- Disable Waiting for Clue for spymasters
+(DONE) - Disable Waiting for Clue for spymasters
+- CLUE COLOR NICKANEM NOT CORRECT
 - Thinking about card
     - Add array to each word
         - push / filter to modify array with a toggle button
@@ -11,8 +12,4 @@ Fix:
 - While spymaster typing, view operative screen
 - Enable Game log scroll
 - RESET CLUES on database update
-- Not only check if 4, but also if all roles are not fulfilled
-- Enable spaces in nickname
-- Fix resizing problem of words 
-    - Use relative parent with set % width
-    - % width of each word within parent
+- Not only check if 4, but also if all roles are not fulfilled (leaving game)

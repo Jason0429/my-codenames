@@ -2,7 +2,7 @@ import React from "react";
 import { colors } from "../models/Colors";
 import { Grid, Paper } from "@material-ui/core";
 
-function WordBox({ word, team, isRevealed, idx, classes, onClick }) {
+function WordBox({ word, team, isRevealed, isChosen, idx, onClick }) {
 	let backgroundColor,
 		borderColor,
 		textColor = "#fff";
@@ -26,18 +26,21 @@ function WordBox({ word, team, isRevealed, idx, classes, onClick }) {
 	}
 
 	return (
-		<Grid item onClick={onClick} idx={idx}>
-			<Paper
-				className={classes.paper}
-				style={{
-					background: backgroundColor,
-					border: `5px solid ${borderColor}`,
-					color: textColor
-				}}
-			>
-				{word}
-			</Paper>
-		</Grid>
+		<Paper
+			onClick={onClick}
+			idx={idx}
+			className='word-box'
+			style={{
+				background: backgroundColor,
+				border: `5px solid ${borderColor}`,
+				color: textColor
+				// fontWeight: isChosen ? "bold" : "normal",
+				// textTransform: isChosen ? "uppercase" : "lowercase"
+			}}
+		>
+			{word}
+			{isChosen && <span>&#10003;</span>}
+		</Paper>
 	);
 }
 

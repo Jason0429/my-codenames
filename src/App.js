@@ -51,9 +51,6 @@ function App() {
 	// CLUES
 	const [clues, setClues] = useState([]);
 
-	// Guesses for operatives
-	const [guessesRemaining, setGuessesRemaining] = useState(1);
-
 	// Testing conditions
 	if (isOnline) db.goOnline();
 	else db.goOffline();
@@ -127,14 +124,14 @@ function App() {
 		db.ref("GAME_STATE").on("value", (snapshot) => {
 			let GAME_STATE = parseInt(snapshot.val());
 			// NEED FOR WORDS TO SORT PROPERLY
-			if (GAME_STATE === 0) {
-				loadWords();
-				updateHasWonInDB(false);
-				updateIsSpymasterTypingInDB(true);
-				updateRedTeamRemainingCards(9);
-				updateBlueTeamRemainingCards(8);
-				updateClueInDB([]);
-			}
+			// if (GAME_STATE === 0) {
+			// 	loadWords();
+			// 	updateHasWonInDB(false);
+			// 	updateIsSpymasterTypingInDB(true);
+			// 	updateRedTeamRemainingCards(9);
+			// 	updateBlueTeamRemainingCards(8);
+			// 	updateClueInDB([]);
+			// }
 
 			setGameState(GAME_STATE);
 			// console.log("---------------------------------");
@@ -180,17 +177,21 @@ function App() {
 		});
 
 		db.ref("clues").on("child_added", (snapshot) => {
-			let clues = snapshot.val() || [];
-			if (clues === []) {
-				setClues([]);
-			} else {
-				setClues((prevState) => [...prevState, snapshot.val()]);
-			}
+			// let clues = snapshot.val() || [];
+			// if (clues instanceof Array && clues.length === 0) {
+			// 	setClues([]);
+			// } else {
+			setClues((prevState) => [...prevState, snapshot.val()]);
+			// }
 
 			// console.log("---------------------------------");
 			// console.log("clues");
 			// console.log("---------------------------------");
 			// console.log(snapshot.val());
+		});
+
+		db.ref("clues").on("child_removed", (snapshot) => {
+			setClues([]);
 		});
 
 		db.ref("clues").on("child_changed", (snapshot) => {
@@ -202,7 +203,9 @@ function App() {
 		});
 
 		db.ref("words").on("child_added", (snapshot) => {
-			setWords((prevState) => [...prevState, snapshot.val()]);
+			if (words.length < 25) {
+				setWords((prevState) => [...prevState, snapshot.val()]);
+			}
 		});
 
 		db.ref("words").on("child_removed", (snapshot) => {
@@ -307,8 +310,17 @@ function App() {
 	// To decrement guesses
 	// clue: object
 	function updateClueInDB(clue) {
-		if (clue === []) db.ref("clues").remove();
-		else db.ref(`clues/clue-${clue.id}`).set(clue);
+		// if (clue instanceof Array && clue.length === 0) {
+		// 	db.ref("clues").remove();
+		// 	setClues([]);
+		// } else {
+		db.ref(`clues/clue-${clue.id}`).set(clue);
+		// }
+	}
+
+	// Removes all clues in database
+	function removeCluesInDB() {
+		db.ref("clues").remove();
 	}
 
 	// Update word at id
@@ -362,6 +374,8 @@ function App() {
 						}
 						updateClueInDB={updateClueInDB}
 						updateHasWonInDB={updateHasWonInDB}
+						loadWords={loadWords}
+						removeCluesInDB={removeCluesInDB}
 					/>
 				</Route>
 				<Route path='/join'>

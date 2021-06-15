@@ -2,7 +2,6 @@ import React from "react";
 import "../stylesheets/Clue.scss";
 import { colors } from "../models/Colors";
 import { Typography } from "@material-ui/core";
-import { fontWeight } from "@material-ui/system";
 
 function Clue({ nickname, team, clue, guesses }) {
 	return (
