@@ -181,7 +181,15 @@ function GameRoom({
 			}
 		}
 
-		return redRevealed === 9 && blueRevealed === 8;
+		if (redRevealed === 9) {
+			return "red";
+		}
+
+		if (blueRevealed === 8) {
+			return "blue";
+		}
+
+		return false;
 	}
 
 	// Switches turns in database
@@ -197,7 +205,6 @@ function GameRoom({
 	// End turn button
 	function handleEndTurn() {
 		switchTurns();
-		updateIsSpymasterTypingInDB(true);
 	}
 
 	// Handles when a word is pressed
@@ -254,7 +261,13 @@ function GameRoom({
 		// CHANGE ORDER OF THIS METHOD
 		// ENDING GAME WHEN A TEAM HAS 1 CARD REMAINING
 		// Check if remaining cards = 0
-		if (checkWin()) {
+		let won = checkWin();
+		if (won === "red") {
+			updateCurrentRoundInDB("red");
+			endGame();
+			return;
+		} else if (won === "blue") {
+			updateCurrentRoundInDB("blue");
 			endGame();
 			return;
 		}
@@ -311,12 +324,12 @@ function GameRoom({
 		updateIsSpymasterTypingInDB(true);
 		setTimeout(() => {
 			updateGameStateInDB(0);
-			updateCurrentRoundInDB("red");
 			loadWords();
 			updateHasWonInDB(false);
 			updateIsSpymasterTypingInDB(true);
 			updateRedTeamRemainingCards(9);
 			updateBlueTeamRemainingCards(8);
+			updateCurrentRoundInDB("red");
 			removeCluesInDB();
 		}, 5000);
 	}
