@@ -170,7 +170,18 @@ function GameRoom({
 
 	// Check for winning conditions
 	function checkWin() {
-		return redTeamRemainingCards === 0 || blueTeamRemainingCards === 0;
+		let redRevealed = 0;
+		let blueRevealed = 0;
+
+		for (let i = 0; i < words.length; i++) {
+			if (words[i]["team"] === "red" && words[i]["isChosen"]) {
+				redRevealed++;
+			} else if (words[i]["team"] === "blue" && words[i]["isChosen"]) {
+				blueRevealed++;
+			}
+		}
+
+		return redRevealed === 9 && blueRevealed === 8;
 	}
 
 	// Switches turns in database
