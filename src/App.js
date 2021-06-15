@@ -18,6 +18,9 @@ function App() {
 	// Firebase database
 	var db = firebase.database();
 
+	// Winner (Red/Blue)
+	const [winner, setWinner] = useState("");
+
 	// GAME_STATE (0 not started, 1 started)
 	const [GAME_STATE, setGameState] = useState(0);
 
@@ -84,6 +87,10 @@ function App() {
 
 	// On listeners
 	useEffect(() => {
+		db.ref("winner").on("value", (snapshot) => {
+			setWinner(snapshot.val());
+		});
+
 		db.ref("users").on("child_added", (snapshot) => {
 			// Load words if length of users was previously 0
 			setUsers((prevState) => [...prevState, snapshot.val()]);
@@ -126,6 +133,7 @@ function App() {
 
 			if (GAME_STATE === 0) {
 				loadWords();
+				updateIsSpymasterTypingInDB(true);
 			}
 
 			setGameState(GAME_STATE);
@@ -242,6 +250,7 @@ function App() {
 
 		// Stop listeners
 		return () => {
+			db.ref("winner").off();
 			db.ref("users").off();
 			db.ref("GAME_STATE").off();
 			db.ref("hasWon").off();
@@ -263,6 +272,12 @@ function App() {
 		setCurrentUser,
 		setHasWon
 	]);
+
+	// Updates winner in database
+	// winner: String (red/blue)
+	function updateWinnerInDB(winner) {
+		db.ref("winner").set(winner);
+	}
 
 	// Updates GAME_STATE in database
 	// value: int
@@ -305,12 +320,7 @@ function App() {
 	// To decrement guesses
 	// clue: object
 	function updateClueInDB(clue) {
-		// if (clue instanceof Array && clue.length === 0) {
-		// 	db.ref("clues").remove();
-		// 	setClues([]);
-		// } else {
 		db.ref(`clues/clue-${clue.id}`).set(clue);
-		// }
 	}
 
 	// Removes all clues in database
@@ -371,6 +381,8 @@ function App() {
 						updateHasWonInDB={updateHasWonInDB}
 						loadWords={loadWords}
 						removeCluesInDB={removeCluesInDB}
+						winner={winner}
+						updateWinnerInDB={updateWinnerInDB}
 					/>
 				</Route>
 				<Route path='/join'>

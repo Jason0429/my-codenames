@@ -54,16 +54,15 @@ function GameRoom({
 	updateClueInDB,
 	updateHasWonInDB,
 	loadWords,
-	removeCluesInDB
+	removeCluesInDB,
+	winner,
+	updateWinnerInDB
 }) {
 	// Set Testing Mode (Ignores warning for roles fulfilled to start game, if true)
 	const [testing, setTesting] = useState(false);
 
 	// Class styles
 	const classes = useStyles();
-
-	// Winner (Red/Blue)
-	const [winner, setWinner] = useState("");
 
 	// Current Clue
 	const [currentClue, setCurrentClue] = useState({
@@ -173,12 +172,7 @@ function GameRoom({
 
 	// Check for winning conditions
 	function checkWin() {
-		if (redTeamRemainingCards === 0) {
-			return "red";
-		} else if (blueTeamRemainingCards === 0) {
-			return "blue";
-		}
-		return false;
+		return redTeamRemainingCards === 1 || blueTeamRemainingCards === 1;
 	}
 
 	// Switches turns in database
@@ -218,9 +212,9 @@ function GameRoom({
 		if (word.team === "black") {
 			// If black card
 			if (currentRound === "red") {
-				setWinner("blue");
+				updateWinnerInDB("blue");
 			} else {
-				setWinner("red");
+				updateWinnerInDB("red");
 			}
 			endGame();
 			return;
@@ -236,42 +230,29 @@ function GameRoom({
 			}
 
 			if (currentRound === "blue") {
-				updateBlueTeamRemainingCards((prevState) => {
-					if (prevState - 1 === 0) {
-						setWinner("blue");
-						endGame();
-					}
-					return prevState - 1;
-				});
+				updateBlueTeamRemainingCards(blueTeamRemainingCards - 1);
 			} else {
-				updateRedTeamRemainingCards((prevState) => {
-					if (prevState - 1 === 0) {
-						setWinner("red");
-						endGame();
-					}
-					return prevState - 1;
-				});
+				updateRedTeamRemainingCards(redTeamRemainingCards - 1);
 			}
 		} else {
 			// If chooses opposite team
 			if (currentRound === "red") {
-				updateBlueTeamRemainingCards((prevState) => {
-					if (prevState - 1 === 0) {
-						setWinner("blue");
-						endGame();
-					}
-					return prevState - 1;
-				});
+				updateBlueTeamRemainingCards(blueTeamRemainingCards - 1);
 			} else {
-				updateRedTeamRemainingCards((prevState) => {
-					if (prevState - 1 === 0) {
-						setWinner("red");
-						endGame();
-					}
-					return prevState - 1;
-				});
+				updateRedTeamRemainingCards(redTeamRemainingCards - 1);
 			}
 			switchTurns();
+		}
+
+		// Check win
+		if (redTeamRemainingCards === 1) {
+			updateWinnerInDB("red");
+			endGame();
+			return;
+		} else if (blueTeamRemainingCards === 1) {
+			updateWinnerInDB("blue");
+			endGame();
+			return;
 		}
 
 		// No more guesses, switch turns
@@ -328,11 +309,11 @@ function GameRoom({
 			updateGameStateInDB(0);
 			loadWords();
 			updateHasWonInDB(false);
-			updateIsSpymasterTypingInDB(true);
 			updateRedTeamRemainingCards(9);
 			updateBlueTeamRemainingCards(8);
 			updateCurrentRoundInDB("red");
 			removeCluesInDB();
+			updateWinnerInDB("");
 		}, 5000);
 	}
 
