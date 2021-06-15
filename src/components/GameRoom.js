@@ -170,11 +170,6 @@ function GameRoom({
 		chat.scrollTop = chat.clientHeight;
 	}
 
-	// Check for winning conditions
-	function checkWin() {
-		return redTeamRemainingCards === 1 || blueTeamRemainingCards === 1;
-	}
-
 	// Switches turns in database
 	function switchTurns() {
 		if (currentRound === "red") {
@@ -223,36 +218,56 @@ function GameRoom({
 			switchTurns();
 			return;
 		} else if (word.team === currentUser.team) {
-			// If correct
 			// Decrement guesses left
 			if (clue.guesses !== "infinity") {
 				updateClueInDB({ ...clue, guesses: clue.guesses - 1 });
 			}
 
+			// Check win if user chooses correct card
+			if (currentRound === "red") {
+				if (redTeamRemainingCards === 1) {
+					updateWinnerInDB("red");
+					endGame();
+					return;
+				}
+			} else {
+				if (blueTeamRemainingCards === 1) {
+					updateWinnerInDB("blue");
+					endGame();
+					return;
+				}
+			}
+
+			// Decrement remaining cards according to team
 			if (currentRound === "blue") {
 				updateBlueTeamRemainingCards(blueTeamRemainingCards - 1);
 			} else {
 				updateRedTeamRemainingCards(redTeamRemainingCards - 1);
 			}
 		} else {
-			// If chooses opposite team
+			// Check win if user chooses opposite team's card
+			if (currentRound === "red") {
+				if (blueTeamRemainingCards === 1) {
+					updateWinnerInDB("blue");
+					endGame();
+					return;
+				}
+			} else {
+				if (redTeamRemainingCards === 1) {
+					updateWinnerInDB("red");
+					endGame();
+					return;
+				}
+			}
+
+			// Decrement remaining cards according to team
 			if (currentRound === "red") {
 				updateBlueTeamRemainingCards(blueTeamRemainingCards - 1);
 			} else {
 				updateRedTeamRemainingCards(redTeamRemainingCards - 1);
 			}
-			switchTurns();
-		}
 
-		// Check win
-		if (redTeamRemainingCards === 1) {
-			updateWinnerInDB("red");
-			endGame();
-			return;
-		} else if (blueTeamRemainingCards === 1) {
-			updateWinnerInDB("blue");
-			endGame();
-			return;
+			switchTurns();
 		}
 
 		// No more guesses, switch turns
