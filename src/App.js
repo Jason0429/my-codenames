@@ -123,15 +123,10 @@ function App() {
 
 		db.ref("GAME_STATE").on("value", (snapshot) => {
 			let GAME_STATE = parseInt(snapshot.val());
-			// NEED FOR WORDS TO SORT PROPERLY
-			// if (GAME_STATE === 0) {
-			// 	loadWords();
-			// 	updateHasWonInDB(false);
-			// 	updateIsSpymasterTypingInDB(true);
-			// 	updateRedTeamRemainingCards(9);
-			// 	updateBlueTeamRemainingCards(8);
-			// 	updateClueInDB([]);
-			// }
+
+			if (GAME_STATE === 0) {
+				loadWords();
+			}
 
 			setGameState(GAME_STATE);
 			// console.log("---------------------------------");
