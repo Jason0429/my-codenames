@@ -39,7 +39,8 @@ function Join({ currentUser, updateCurrentUserInDB }) {
 					To enter the room, choose a nickname.
 				</Typography>
 
-				<form className='form' noValidate autoComplete='off'>
+				{/* <form className='form' noValidate autoComplete='off'> */}
+				<div className='form'>
 					<TextField
 						id='filled-basic'
 						label='Enter Your Nickname'
@@ -71,7 +72,7 @@ function Join({ currentUser, updateCurrentUserInDB }) {
 							</Button>
 						</div>
 					)}
-				</form>
+				</div>
 			</div>
 		</div>
 	);
