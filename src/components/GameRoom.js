@@ -59,9 +59,6 @@ function GameRoom({
 	// Set Testing Mode (Ignores warning for roles fulfilled to start game, if true)
 	const [testing, setTesting] = useState(false);
 
-	// Winner (Red/Blue)
-	const [winner, setWinner] = useState("");
-
 	// Class styles
 	const classes = useStyles();
 
@@ -173,7 +170,7 @@ function GameRoom({
 
 	// Check for winning conditions
 	function checkWin() {
-		return redTeamRemainingCards === 1 || blueTeamRemainingCards === 1;
+		return redTeamRemainingCards === 0 || blueTeamRemainingCards === 0;
 	}
 
 	// Switches turns in database
@@ -214,11 +211,7 @@ function GameRoom({
 
 		if (word.team === "black") {
 			// If black card
-			if (currentRound === "blue") {
-				setWinner("red");
-			} else {
-				setWinner("blue");
-			}
+			switchTurns();
 			endGame();
 			return;
 		} else if (word.team === "white") {
@@ -251,11 +244,6 @@ function GameRoom({
 		// ENDING GAME WHEN A TEAM HAS 1 CARD REMAINING
 		// Check if remaining cards = 0
 		if (checkWin()) {
-			if (currentRound === "blue") {
-				setWinner("blue");
-			} else {
-				setWinner("red");
-			}
 			endGame();
 			return;
 		}
@@ -763,7 +751,7 @@ function GameRoom({
 					<div className='winner-background'></div>
 					<div className='winner-text'>
 						<Typography variant='h5'>
-							{winner.toUpperCase()} TEAM HAS WON
+							{currentRound.toUpperCase()} TEAM HAS WON
 						</Typography>
 					</div>
 				</>
